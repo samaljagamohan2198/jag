@@ -1,0 +1,10 @@
+
+
+
+<ul class="items" *ngFor="let dept of departments" (click)="onselect(dept)">
+    <li>
+        <span class="badge"> {{dept.id}}</span>{{dept.name}}
+    </li>  
+</ul>
+
+<router-outlet></router-outlet>
